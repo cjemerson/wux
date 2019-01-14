@@ -1,0 +1,12 @@
+# config.txt
+# In Descending importance:
+# '@' for book number
+# '%' for chapter number
+# '!' for part number
+!!! Any line with a '#' is a comment !!!
+
+https://www.wuxiaworld.com/novel/rmji/rmji-chapter-% 876
+
+https://www.wuxiaworld.com/novel/the-unrivaled-tang-sect/uts-chapter-%-! 384 3
+
+https://www.wuxiaworld.com/novel/demon-hunter/book-@-chapter-%-! 5 24 1
