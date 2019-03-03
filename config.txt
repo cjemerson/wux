@@ -1,12 +1,20 @@
 # config.txt
 # In Descending importance:
-# '@' for book number
-# '%' for chapter number
-# '!' for part number
+# '@' will be replaced from left-to-right by the major section to minor
+# ** If section numbers aren't included will default to 1 **
+#
+# Example:
+#     "http://www.example.com/volume-@/chapter-@/section-@-part-@/ 3 72 8 2"
+# Corresponds to:
+#     Volume: 3
+#     Chapter: 72
+#     Section: 8
+#     Part: 2
+#
 !!! Any line with a '#' is a comment !!!
 
-https://www.wuxiaworld.com/novel/rmji/rmji-chapter-% 876
+https://www.wuxiaworld.com/novel/rmji/rmji-chapter-@
 
-https://www.wuxiaworld.com/novel/the-unrivaled-tang-sect/uts-chapter-%-! 384 3
+https://www.wuxiaworld.com/novel/the-unrivaled-tang-sect/uts-chapter-@-@
 
-https://www.wuxiaworld.com/novel/demon-hunter/book-@-chapter-%-! 5 24 1
+https://www.wuxiaworld.com/novel/demon-hunter/book-@-chapter-@-@
