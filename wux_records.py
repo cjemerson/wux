@@ -240,7 +240,9 @@ if __name__ == "__main__":
 		userline = input(">> wux >> ")
 
 		args = userline.split()
-		if (args[0] == "list"):
+		if len(args) == 0:
+			print("For usage type in \"help\"")
+		elif (args[0] == "list"):
 			handle_list(records, args)
 		elif (args[0] == "read"):
 			handle_read(records, args)
