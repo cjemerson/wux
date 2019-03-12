@@ -1,8 +1,8 @@
 #! /usr/bin/python3
-# findCurrentWebNovelChapter.py
+# wux.py
 # Charles Emerson
 # Created: 29 Dec 2018
-# Updated: 02 Mar 2019
+# Updated: 11 Mar 2019
 #
 # Run as a script, determines and records the current web novel
 # book, chapter, and part of the entries web novels in "config.txt".
@@ -72,7 +72,7 @@ def isGoodAddr(addr):
 # PRIMARY FUNCTION
 ########################################################################
 
-def findBCP(fAddr, sections):
+def determineCurrentFrom(fAddr, sections):
 	"""Determine the current book, chapter, part."""
 	countUp = True
 
@@ -132,7 +132,7 @@ if __name__ == "__main__":
 		fAddr, sections = extractAddr(line)
 
 		print('Given: ' + formatAddr(fAddr, sections))
-		sections = findBCP(fAddr, sections)
+		sections = determineCurrentFrom(fAddr, sections)
 		print('Current: ' + formatAddr(fAddr, sections))
 		print()
 

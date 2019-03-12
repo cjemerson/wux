@@ -1,0 +1,40 @@
+Requirements:
+	* Must be able to store records into file
+	* Must be able to read records from a file
+	* Must be able to identify valid addresses
+
+	* Should be able to add records
+	* Should be able to update records
+
+	* Could list all the records 
+	* Could set aliases for the records 
+	* Could remove records
+	* Could open browser pages for unread chapters
+	* Could open browser pages for all unread chapters 
+	* Could *not* forget that it's looked this up before
+
+
+Possible commands:
+	* read
+		- ? specify which element to open and read ?
+		- signals that X chapters await reading
+		- ? opens browser tab for each chapter ?
+		- ? updates entry to latest chapter ?
+		- ? read all functionality ?
+	* update
+		- manually updates entry in table with chapter numbers
+	* add
+		- manually add entry
+		- ? specify current chapter numbers ?
+		- ? add an alias ?
+		- ? add multiple aliases ?
+	* reorder
+		- reorder entries
+		- ? HOW ?
+	* list
+		- List elements in the table
+		- ? HOW ?
+	* alias
+		- add alias to element (make it easier to choose read?)
+	* remove
+		- remove element from table
